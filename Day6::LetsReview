@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Scanner scanner = new Scanner(System.in);  
+        int N = scanner.nextInt();
+        
+         while(scanner.hasNextLine()) {
+         String s = scanner.next();
+         String evenString = "";
+         String oddString = "";
+         for(int i = 0; i < s.length(); i++) {
+            if(i%2 == 0) {
+                evenString += s.charAt(i);
+            }
+            else {
+                oddString += s.charAt(i);
+            }
+        }
+        
+        System.out.println(evenString + " " + oddString);
+        } 
+    }
+}
